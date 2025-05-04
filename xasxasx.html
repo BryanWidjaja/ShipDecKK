@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Hover Change with Transition</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .nav-img {
+        transition: opacity 0.3s ease-in-out;
+        opacity: 1;
+        width: 150px;
+        height: auto;
+      }
+
+      .nav-img.hidden {
+        opacity: 0;
+      }
+    </style>
+
+    <!-- Preload both images -->
+    <link rel="preload" as="image" href="../assets/images/logo_white.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="../assets/images/full_logo_white.png"
+    />
+  </head>
+  <body>
+    <img class="nav-img" src="../assets/images/logo_white.png" alt="Logo" />
+
+    <script>
+      const navImage = document.querySelector(".nav-img");
+      let isFullLogo = false;
+
+      // Preload images via JS (fallback or extra assurance)
+      const preload = (src) => {
+        const img = new Image();
+        img.src = src;
+      };
+
+      preload("../assets/images/logo_white.png");
+      preload("../assets/images/full_logo_white.png");
+
+      function changeImage(src, stateFlag) {
+        if (isFullLogo === stateFlag) return;
+
+        navImage.classList.add("hidden");
+
+        setTimeout(() => {
+          navImage.onload = () => {
+            navImage.classList.remove("hidden");
+            navImage.onload = null; // avoid re-triggering
+          };
+          navImage.src = src;
+          isFullLogo = stateFlag;
+        }, 100);
+      }
+
+      navImage.addEventListener("mouseover", () => {
+        changeImage("../assets/images/full_logo_white.png", true);
+      });
+
+      navImage.addEventListener("mouseout", () => {
+        changeImage("../assets/images/logo_white.png", false);
+      });
+    </script>
+  </body>
+</html>
