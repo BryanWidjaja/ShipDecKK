@@ -109,9 +109,6 @@ video {
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
   transition: all 0.3s;
-}
-
-.main-btn a {
   font-weight: 600;
   font-size: 1.25rem;
   color: var(--main-beige);
@@ -122,7 +119,7 @@ video {
   background-color: var(--main-beige);
 }
 
-.main-btn:hover a {
+.main-btn:hover {
   color: var(--main-darkblue);
 }
 
