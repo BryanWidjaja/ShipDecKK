@@ -62,7 +62,7 @@ video {
 
 .nav-links {
   font-family: Laurentian Std It;
-  color: var(--main-beige);
+  color: var(--main-offwhite);
   font-size: 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   padding: 0.25rem 0.75rem;
@@ -81,7 +81,7 @@ video {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: var(--main-beige);
+  color: var(--main-offwhite);
   z-index: 10;
   gap: 0.75rem;
 }
@@ -106,18 +106,18 @@ video {
 
 .main-btn {
   background-color: transparent;
-  border: 0.15rem solid var(--main-beige);
+  border: 0.15rem solid var(--main-offwhite);
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
   transition: all 0.3s;
   font-weight: 600;
   font-size: 1.25rem;
-  color: var(--main-beige);
+  color: var(--main-offwhite);
   transition: all 0.3s;
 }
 
 .main-btn:hover {
-  background-color: var(--main-beige);
+  background-color: var(--main-offwhite);
 }
 
 .main-btn:hover {
@@ -139,26 +139,56 @@ video {
   animation: bounce 1.5s ease-in-out infinite;
 }
 
-.gallery {
+.showcase {
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 240vh;
   background-color: beige;
 }
 
-.services {
+.section-gap {
+  height: 10vh;
   width: 100%;
-  height: 100vh;
-  background-color: bisque;
+  background-color: var(--main-beige);
 }
 
-.aboutus {
-  width: 100%;
-  height: 100vh;
-  background-color: lightcyan;
+.showcase p {
+  color: var(--main-offwhite);
+  z-index: 5;
 }
 
-.subscription {
+.showcase-subsect1,
+.showcase-subsect2,
+.showcase-subsect3 {
+  height: 80vh;
   width: 100%;
-  height: 100vh;
-  background-color: lightblue;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 6rem;
+}
+
+.showcase-title {
+  font-size: 3rem;
+  font-family: Laurentian Std It;
+}
+
+.showcase-desc {
+  font-size: 1.25rem;
+  width: 60%;
+}
+
+.showcase-subsect1 {
+  background-image: url("../images/luxury/1.jpg");
+}
+
+.showcase-subsect2 {
+  background-image: url("../images/yacht/1.png");
+  text-align: right;
+  align-items: flex-end;
+}
+
+.showcase-subsect3 {
+  background-image: url("../images/expedition/1.jpg");
 }
