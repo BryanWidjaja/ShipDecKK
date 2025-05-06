@@ -1,5 +1,5 @@
 body {
-  height: 500vh;
+  height: 520vh;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -118,9 +118,6 @@ video {
 
 .main-btn:hover {
   background-color: var(--main-offwhite);
-}
-
-.main-btn:hover {
   color: var(--main-darkblue);
 }
 
@@ -167,6 +164,7 @@ video {
   display: flex;
   flex-direction: column;
   padding: 4rem 6rem;
+  z-index: 5;
 }
 
 .showcase-title {
@@ -191,4 +189,80 @@ video {
 
 .showcase-subsect3 {
   background-image: url("../images/expedition/1.jpg");
+}
+
+.showcase-subsect1 a,
+.showcase-subsect2 a,
+.showcase-subsect3 a {
+  z-index: 5;
+  padding-top: 1rem;
+}
+
+.showcase-btn {
+  background-color: transparent;
+  border: 0.15rem solid var(--main-offwhite);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--main-offwhite);
+  transition: all 0.3s;
+}
+
+.showcase-btn:hover {
+  background-color: var(--main-offwhite);
+  color: var(--main-darkblue);
+}
+
+.test {
+  height: 100vh;
+  width: 100%;
+  background-color: bisque;
+}
+
+.footer {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(11, 58, 71, 1), rgba(5, 38, 61, 1));
+  padding: 4rem;
+  color: var(--main-offwhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-bottom: 2rem;
+}
+
+.footer-top-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.footer-links {
+  color: var(--main-offwhite);
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.policies {
+  display: flex;
+  gap: 3rem;
 }
