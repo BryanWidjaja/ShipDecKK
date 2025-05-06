@@ -256,6 +256,21 @@ video {
   color: var(--main-offwhite);
 }
 
+.footer-links:hover {
+  text-decoration: underline;
+}
+.footer-socialmedia {
+  display: flex;
+  align-items: center;
+  height: 75%;
+  gap: 0.5rem;
+}
+
+.footer-socialmedia img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .footer-bottom {
   width: 100%;
   display: flex;
