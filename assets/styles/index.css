@@ -146,7 +146,6 @@ video {
 .section-gap {
   height: 10vh;
   width: 100%;
-  background-color: var(--main-beige);
 }
 
 .showcase p {
