@@ -9,7 +9,7 @@ window.addEventListener("scroll", function () {
   let opacity = currentScrollY / landingHeight;
   if (opacity > 1) opacity = 1;
 
-  navBar.style.background = `linear-gradient(135deg, rgba(11, 58, 71, ${opacity}), rgba(5, 38, 61, ${opacity}))`;
+  navBar.style.background = `linear-gradient(135deg, rgba(41, 55, 59, ${opacity}), rgba(24, 39, 48, ${opacity}))`;
 
   if (currentScrollY > lastScrollY && currentScrollY > 100) {
     navBar.style.transform = "translateY(-100%)";

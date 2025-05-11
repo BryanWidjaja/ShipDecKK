@@ -67,4 +67,5 @@ a:hover {
   width: 100%;
   background-color: rgba(68, 59, 40, 0.25);
   z-index: 1;
+  border-radius: 2rem;
 }
