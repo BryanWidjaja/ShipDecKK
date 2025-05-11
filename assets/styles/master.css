@@ -8,9 +8,10 @@
 }
 
 :root {
+  --main-primary: #007bcd;
   --main-darkblue: #05263d;
-  --main-offwhite: #fffef9;
-  --main-beige: #f6f5ed;
+  --main-offwhite: #fffffd;
+  --main-beige: rgb(249, 248, 245);
 }
 
 body {

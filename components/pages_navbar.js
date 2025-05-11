@@ -1,16 +1,14 @@
 const navBar = document.querySelector(".navbar");
-const landingSection = document.querySelector(".landing");
 let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", function () {
-  const landingHeight = landingSection.offsetHeight;
   const currentScrollY = window.scrollY;
 
-  let opacity = currentScrollY / landingHeight;
+  let opacity = currentScrollY / 300;
   if (currentScrollY === 0) {
     opacity = 1;
   } else {
-    opacity = currentScrollY / landingHeight;
+    opacity = currentScrollY / 300;
     if (opacity > 1) opacity = 1;
   }
 
