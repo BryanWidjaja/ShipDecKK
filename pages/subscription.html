@@ -29,12 +29,14 @@
       <div class="form-container">
         <p class="form-title">Subscribe Now</p>
 
+        <div class="horizontal-line"></div>
+
         <form class="subscription-form" method="post">
           <div class="form-element-container">
-            <label for="name" class="form-label">Name</label>
+            <label for="name-input" class="form-label">Name</label>
             <input
               type="text"
-              id="name"
+              id="name-input"
               name="name"
               placeholder="Enter your name"
               class="form-input"
@@ -43,11 +45,11 @@
           </div>
 
           <div class="form-element-container">
-            <label for="email" class="form-label">Email Address</label>
+            <label for="email-input" class="form-label">Email Address</label>
             <input
               type="email"
-              id="email"
-              name="email"
+              id="email-input"
+              name="email-input"
               placeholder="Enter your email address"
               class="form-input"
             />
@@ -55,12 +57,12 @@
           </div>
 
           <div class="form-element-container">
-            <label for="password" class="form-label">Password</label>
+            <label for="password-input" class="form-label">Password</label>
             <div class="password-input-container">
               <input
                 type="password"
-                id="password"
-                name="password"
+                id="password-input"
+                name="password-input"
                 placeholder="Enter your password"
               />
               <img
@@ -73,15 +75,15 @@
           </div>
 
           <div class="form-element-container">
-            <label for="email" class="form-label">Email Address</label>
+            <label for="age-input" class="form-label">Age</label>
             <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email address"
+              type="number"
+              id="age-input"
+              name="age-input"
+              placeholder="Enter your age"
               class="form-input"
             />
-            <div class="errormsg" id="email-error"></div>
+            <div class="errormsg" id="age-error"></div>
           </div>
 
           <div class="form-element-container">
@@ -90,49 +92,53 @@
               <div class="checkbox-container">
                 <input
                   type="checkbox"
-                  id="terms"
-                  name="terms"
+                  id="interests-input"
+                  name="interests-input"
                   class="checkbox"
                 />
-                <label for="terms" class="checkbox-label">
+                <label for="interests-input" class="checkbox-label">
                   New Ship Arrivals
                 </label>
               </div>
               <div class="checkbox-container">
                 <input
                   type="checkbox"
-                  id="terms"
-                  name="terms"
+                  id="interests-input"
+                  name="interests-input"
                   class="checkbox"
                 />
-                <label for="terms" class="checkbox-label"> Newsletter </label>
+                <label for="interests-input" class="checkbox-label">
+                  Newsletter
+                </label>
               </div>
               <div class="checkbox-container">
                 <input
                   type="checkbox"
-                  id="terms"
-                  name="terms"
+                  id="interests-input"
+                  name="interests-input"
                   class="checkbox"
                 />
-                <label for="terms" class="checkbox-label">
-                  New Ship Arrivals
+                <label for="interests-input" class="checkbox-label">
+                  Service Updates
                 </label>
               </div>
             </div>
 
-            <div class="errormsg" id="email-error"></div>
+            <div class="errormsg" id="interests-error"></div>
           </div>
+
+          <div class="horizontal-line"></div>
 
           <div class="form-element-row-container">
             <div class="form-element-container">
               <div class="checkbox-container">
                 <input
                   type="checkbox"
-                  id="terms"
-                  name="terms"
+                  id="terms-input"
+                  name="terms-input"
                   class="checkbox"
                 />
-                <label for="terms" class="checkbox-label">
+                <label for="terms-input" class="checkbox-label">
                   I agree to the
                   <a href="https://github.com/BryanWidjaja/ShipDecKK">
                     Terms & Conditions
@@ -146,11 +152,11 @@
               <div class="checkbox-container">
                 <input
                   type="checkbox"
-                  id="privacy"
-                  name="privacy"
+                  id="privacy-input"
+                  name="privacy-input"
                   class="checkbox"
                 />
-                <label for="privacy" class="checkbox-label">
+                <label for="privacy-input" class="checkbox-label">
                   I agree to the
                   <a href="https://github.com/BryanWidjaja/ShipDecKK">
                     Privacy Policies
