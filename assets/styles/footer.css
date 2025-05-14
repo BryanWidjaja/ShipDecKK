@@ -1,5 +1,5 @@
 .footer {
-  height: 50vh;
+  height: 55vh;
   width: 100%;
   background: linear-gradient(135deg, rgb(41, 55, 59), rgb(24, 39, 48));
   padding: 4rem 4rem 1rem 4rem;
@@ -43,6 +43,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .policies {
@@ -70,6 +71,7 @@
 .footer-top-section:nth-child(1) {
   width: 35%;
   align-items: center;
+  text-align: center;
 }
 
 .footer-top-section:nth-child(2),
