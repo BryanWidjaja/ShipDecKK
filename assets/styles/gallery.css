@@ -1,0 +1,72 @@
+.gallery {
+  padding-top: 22.5vh;
+  padding-bottom: 10vh;
+  color: var(--main-darkblue);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.catagories {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  font-size: 1.25rem;
+  z-index: 5;
+  border-bottom: 0.05rem solid var(--main-darkblue);
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.selected {
+  color: var(--main-primary);
+  border-bottom: 0.15rem solid var(--main-primary);
+}
+
+.gallery-row {
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ship-card {
+  width: 20%;
+  height: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--main-offwhite);
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.ship-card img {
+  height: 72.5%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.card-price {
+  color: var(--main-darkgrayblue);
+}
+
+.ship-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

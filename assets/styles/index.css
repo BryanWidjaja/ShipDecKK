@@ -185,19 +185,19 @@ video {
 }
 
 .showcase-subsect1 {
-  background-image: url("../images/luxury/1.jpg");
+  background-image: url("../images/yacht/1.png");
   margin-right: 10%;
 }
 
 .showcase-subsect2 {
-  background-image: url("../images/yacht/1.png");
+  background-image: url("../images/liner/1.png");
   text-align: right;
   align-items: flex-end;
   margin-left: 10%;
 }
 
 .showcase-subsect3 {
-  background-image: url("../images/expedition/1.jpg");
+  background-image: url("../images/cargo/1.png");
   margin-right: 10%;
 }
 

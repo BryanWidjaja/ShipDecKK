@@ -66,3 +66,26 @@
   justify-content: center;
   font-size: 0.85rem;
 }
+
+.footer-top-section:nth-child(1) {
+  width: 35%;
+  align-items: center;
+}
+
+.footer-top-section:nth-child(2),
+.footer-top-section:nth-child(3) {
+  width: 15%;
+}
+
+.footer-top-section:nth-child(4) {
+  width: 35%;
+}
+
+.footer-main-logo {
+  font-family: Laurentian Std It;
+  font-size: 3.5rem;
+}
+
+.footer-logo-desc {
+  font-size: 1.25rem;
+}

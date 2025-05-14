@@ -10,6 +10,7 @@
 :root {
   --main-primary: #007bcd;
   --main-darkblue: #05263d;
+  --main-darkgrayblue: #44484a;
   --main-offwhite: #fffffd;
   --main-beige: rgb(249, 248, 245);
 }
@@ -69,4 +70,8 @@ a:hover {
   background-color: rgba(68, 59, 40, 0.25);
   z-index: 1;
   border-radius: 2rem;
+}
+
+.display-none {
+  display: none !important;
 }
