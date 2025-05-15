@@ -55,7 +55,8 @@ video {
 }
 
 .nav-links {
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
   color: var(--main-offwhite);
   font-size: 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -90,7 +91,8 @@ video {
 }
 
 .main-title {
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
   font-size: 3.5rem;
 }
 
@@ -148,7 +150,8 @@ video {
 
 .showcase-title {
   color: var(--main-darkblue);
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
   font-size: 4rem;
 }
 
@@ -176,7 +179,8 @@ video {
 
 .showcase-subsect-title {
   font-size: 2.5rem;
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
 }
 
 .showcase-desc {
@@ -231,7 +235,8 @@ video {
   right: 13rem;
   width: 1.5rem;
   height: 1.5rem;
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
   font-size: 5rem;
   color: transparent !important;
   -webkit-text-stroke: 0.05rem var(--main-offwhite);
@@ -243,7 +248,8 @@ video {
   left: 2.5rem;
   width: 1.5rem;
   height: 1.5rem;
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
   font-size: 5rem;
   color: transparent !important;
   -webkit-text-stroke: 0.05rem var(--main-offwhite);

@@ -38,7 +38,8 @@
 }
 
 .nav-links {
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
   color: var(--main-offwhite);
   font-size: 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;

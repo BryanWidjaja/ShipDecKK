@@ -39,7 +39,8 @@
 
 .form-title {
   font-size: 2.75rem;
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
   color: var(--main-primary);
 }
 

@@ -35,7 +35,7 @@
 }
 
 .footer-links:hover {
-  text-decoration: underline;
+  color: var(--main-primary);
 }
 
 .footer-mid {
@@ -84,7 +84,8 @@
 }
 
 .footer-main-logo {
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
   font-size: 3.5rem;
 }
 

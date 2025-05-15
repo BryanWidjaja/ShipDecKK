@@ -17,7 +17,8 @@
 }
 
 .header-title {
-  font-family: Laurentian Std It;
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
   font-size: 4rem;
 }
 
