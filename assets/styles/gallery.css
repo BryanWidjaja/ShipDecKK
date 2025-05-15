@@ -1,6 +1,5 @@
 .gallery {
-  padding-top: 22.5vh;
-  padding-bottom: 10vh;
+  padding: 10vh 0;
   color: var(--main-darkblue);
   display: flex;
   flex-direction: column;
@@ -10,8 +9,13 @@
   min-height: 100vh;
 }
 
+.gallery-title {
+  font-family: Laurentian Std It;
+  font-size: 3rem;
+}
+
 .catagories {
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,0 +1,60 @@
+.header {
+  position: relative;
+  padding-top: 12.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--main-offwhite);
+  gap: 0.5rem;
+}
+
+.header p {
+  z-index: 10;
+}
+
+.header-title {
+  font-family: Laurentian Std It;
+  font-size: 4rem;
+}
+
+.header-desc {
+  font-size: 1.25rem;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(73, 73, 73, 0.5) 50%,
+    var(--main-beige)
+  );
+  z-index: 1;
+}
+
+.header.aboutus-header {
+  background-image: url("../images/header/aboutus.jpg");
+  background-position: center 42.5%;
+}
+
+.header.subscription-header {
+  background-image: url("../images/header/subscription.jpg");
+  background-position: center 62.5%;
+}
+
+.header.gallery-header {
+  background-image: url("../images/header/gallery.jpg");
+  background-position: center;
+}
+
+.header.services-header {
+  background-image: url("../images/header/services.jpg");
+  background-position: center 42.5%;
+}

@@ -1,6 +1,5 @@
 .form-section {
-  padding-top: 22.5vh;
-  padding-bottom: 10vh;
+  padding: 10vh 0;
   color: var(--main-darkblue);
   display: flex;
   justify-content: center;
