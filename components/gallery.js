@@ -31,21 +31,51 @@ const showRow = (row) => {
   row.classList.remove("display-none");
 };
 
-const galleryRowClicked = (showCategory, categoryRow) => {
+const galleryRowClicked = (showCategory, category) => {
   showCategory.addEventListener("click", () => {
-    selectCategory(showCategory);
-    resetGalleryRows();
-    showRow(categoryRow);
+    window.location.hash = `#${category}`;
   });
 };
 
-showAll.addEventListener("click", () => {
+const showAllCategories = () => {
   selectCategory(showAll);
   galleryRows.forEach((row) => {
     row.classList.remove("display-none");
   });
+  window.location.hash = "";
+};
+
+const changeCategory = (showCategory, categoryRow) => {
+  selectCategory(showCategory);
+  resetGalleryRows();
+  showRow(categoryRow);
+};
+
+const hashChange = () => {
+  const hash = window.location.hash;
+  switch (hash) {
+    case "#yachts":
+      changeCategory(showYacht, yachtRow);
+      break;
+    case "#liners":
+      changeCategory(showLiner, linerRow);
+      break;
+    case "#cargos":
+      changeCategory(showCargo, cargoRow);
+      break;
+    default:
+      showAllCategories();
+      break;
+  }
+};
+
+document.addEventListener("DOMContentLoaded", hashChange);
+window.addEventListener("hashchange", hashChange);
+
+showAll.addEventListener("click", () => {
+  showAllCategories();
 });
 
-galleryRowClicked(showYacht, yachtRow);
-galleryRowClicked(showLiner, linerRow);
-galleryRowClicked(showCargo, cargoRow);
+galleryRowClicked(showYacht, "yachts");
+galleryRowClicked(showLiner, "liners");
+galleryRowClicked(showCargo, "cargos");
