@@ -40,6 +40,7 @@
   --main-darkgrayblue: #44484a;
   --main-offwhite: #fffffd;
   --main-beige: rgb(249, 248, 245);
+  --main-ivory: rgb(240, 238, 234);
 }
 
 body {
@@ -94,7 +95,7 @@ a:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(68, 59, 40, 0.25);
+  background-color: rgba(68, 59, 40, 0.5);
   z-index: 1;
   border-radius: 2rem;
 }

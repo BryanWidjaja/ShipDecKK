@@ -1,1 +1,67 @@
+.aboutus-title,
+.journey-year {
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
+  font-size: 3rem;
+}
 
+.aboutus-text {
+  width: 65%;
+  font-size: 1.1rem;
+}
+
+.ourstory {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  color: var(--main-darkblue);
+}
+
+.ourjourney {
+  height: 65vh;
+  background-color: var(--main-ivory);
+  color: var(--main-darkblue);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.journey-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.journey-card {
+  width: 15%;
+  height: 80%;
+  background-color: var(--main-beige);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.horizontal-line {
+  width: 90%;
+  height: 0.01rem;
+  background-color: #999999;
+}
+
+.journey-text {
+  font-size: 1.1rem;
+}
