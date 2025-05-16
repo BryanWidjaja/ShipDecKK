@@ -93,7 +93,7 @@
   border: 0.1rem solid #999999;
   transition: all 0.3s ease;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
 }
@@ -104,6 +104,12 @@
   font-family: inherit;
   border: none;
   outline: none;
+}
+
+.show-pass-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .show-pass-btn:hover {
