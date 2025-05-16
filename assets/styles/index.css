@@ -46,6 +46,7 @@ video {
   display: flex;
   justify-content: flex-end;
   gap: 5%;
+  z-index: 20;
 }
 
 .nav-links {

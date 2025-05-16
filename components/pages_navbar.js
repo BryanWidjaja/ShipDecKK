@@ -12,12 +12,13 @@ window.addEventListener("scroll", function () {
     if (opacity > 1) opacity = 1;
   }
 
-  navBar.style.background = `linear-gradient(135deg, rgba(41, 55, 59, ${opacity}), rgba(24, 39, 48, ${opacity}))`;
-
-  if (currentScrollY > lastScrollY && currentScrollY > 100) {
-    navBar.style.transform = "translateY(-100%)";
-  } else {
-    navBar.style.transform = "translateY(0)";
+  if (!navBar.classList.contains("visible")) {
+    navBar.style.background = `linear-gradient(135deg, rgba(41, 55, 59, ${opacity}), rgba(24, 39, 48, ${opacity}))`;
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      navBar.style.transform = "translateY(-100%)";
+    } else {
+      navBar.style.transform = "translateY(0)";
+    }
   }
 
   lastScrollY = currentScrollY;
