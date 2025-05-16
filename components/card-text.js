@@ -3,7 +3,9 @@ const resizeText = () => {
   cards.forEach((card) => {
     const title = card.querySelector(".card-title");
 
-    let fontSize = 1.25;
+    let fontSize =
+      parseFloat(getComputedStyle(title).fontSize) /
+      parseFloat(getComputedStyle(document.documentElement).fontSize);
 
     title.style.fontSize = `${fontSize}rem`;
 

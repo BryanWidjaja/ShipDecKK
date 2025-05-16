@@ -59,3 +59,13 @@
   background-image: url("../images/header/services.jpg");
   background-position: center 42.5%;
 }
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 3rem;
+  }
+
+  .header-desc {
+    font-size: 1rem;
+  }
+}

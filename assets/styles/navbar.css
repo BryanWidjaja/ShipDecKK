@@ -6,7 +6,7 @@
   height: 12.5vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 0 5rem;
   z-index: 15;
   transition: all 0.3s ease;
@@ -15,15 +15,9 @@
 
 .logo-div {
   height: 100%;
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-
-.nav-img {
-  height: 45%;
-  object-fit: contain;
 }
 
 .logo-div a {
@@ -49,4 +43,40 @@
 
 .links a:hover {
   background-color: rgba(255, 254, 249, 0.15);
+}
+
+@media (max-width: 768px) {
+  .logo-div a {
+    font-size: 3rem;
+  }
+
+  .navbar {
+    padding: 2rem;
+  }
+
+  .links {
+    position: absolute;
+    top: 12.5vh;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(41, 55, 59), rgba(24, 39, 48));
+    flex-direction: column;
+    justify-content: flex-start;
+    display: none;
+    padding: 1rem 0;
+    gap: 2%;
+  }
+
+  .links.visible {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar.visible {
+    background: linear-gradient(135deg, rgba(41, 55, 59), rgba(24, 39, 48));
+  }
 }

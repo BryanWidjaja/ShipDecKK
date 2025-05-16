@@ -40,7 +40,6 @@
   height: 50vh;
   display: flex;
   gap: 3rem;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -172,4 +171,39 @@
 .popup-btn:hover {
   filter: brightness(1.2);
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .gallery-title {
+    font-size: 2.25rem;
+  }
+
+  .catagories {
+    width: 85%;
+  }
+
+  .catagories,
+  .card-title,
+  .popup-desc,
+  .popup-btn {
+    font-size: 0.9rem;
+  }
+
+  .popup-title {
+    font-size: 1.75rem;
+  }
+
+  .popup-price {
+    font-size: 1.25rem;
+  }
+
+  .gallery-row {
+    width: 85%;
+    height: 50vh;
+    gap: 2rem;
+  }
+
+  .ship-card {
+    width: 30%;
+  }
 }

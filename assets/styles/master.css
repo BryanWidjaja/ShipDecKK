@@ -96,3 +96,12 @@ a:hover {
 .display-none {
   display: none !important;
 }
+
+.hamburger {
+  display: none;
+  width: 1.5rem;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
