@@ -97,6 +97,10 @@
     font-size: 1.75rem;
   }
 
+  .service-desc {
+    font-size: 0.8rem;
+  }
+
   .service-container {
     height: auto;
   }
