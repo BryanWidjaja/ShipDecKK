@@ -257,7 +257,7 @@ video {
 
   .links {
     position: absolute;
-    top: 12.5vh;
+    top: 12.4vh;
     right: 0;
     width: 30%;
     height: 100vh;
@@ -336,6 +336,10 @@ video {
 
   .links a {
     font-size: 1.25rem;
+  }
+
+  .main-desc {
+    font-size: 1rem;
   }
 
   .showcase {
