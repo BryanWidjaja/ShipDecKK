@@ -230,6 +230,10 @@
   .popup-btn {
     width: 50%;
   }
+
+  .ship-card-img {
+    height: 77.5%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -292,5 +296,9 @@
 
   .popup-img {
     width: 65%;
+  }
+
+  .ship-card-img {
+    height: 75%;
   }
 }
