@@ -194,4 +194,8 @@
     flex-direction: column;
     gap: 0.5rem;
   }
+
+  .form-container {
+    padding: 1.5rem 2rem;
+  }
 }
