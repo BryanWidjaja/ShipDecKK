@@ -24,7 +24,7 @@ video {
   height: 12.5%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 0 5rem;
   z-index: 15;
   transition: all 0.3s ease;
@@ -32,15 +32,9 @@ video {
 
 .logo-div {
   height: 100%;
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-
-.nav-img {
-  height: 45%;
-  object-fit: contain;
 }
 
 .logo-div a {
@@ -183,7 +177,7 @@ video {
   font-style: italic;
 }
 
-.showcase-desc {
+.showcase-subsect-desc {
   font-size: 1.15rem;
   width: 70%;
 }
@@ -253,4 +247,76 @@ video {
   font-size: 5rem;
   color: transparent !important;
   -webkit-text-stroke: 0.05rem var(--main-offwhite);
+}
+
+.hamburger {
+  display: none;
+  width: 2rem;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 2rem;
+  }
+
+  .links {
+    position: absolute;
+    top: 12.5vh;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(41, 55, 59), rgba(24, 39, 48));
+    flex-direction: column;
+    justify-content: flex-start;
+    display: none;
+    padding: 1rem 0;
+    gap: 2%;
+  }
+
+  .links.visible {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar.visible {
+    background: linear-gradient(135deg, rgba(41, 55, 59), rgba(24, 39, 48));
+  }
+
+  .showcase-subsect1,
+  .showcase-subsect2,
+  .showcase-subsect3 {
+    padding: 1.5rem 2rem;
+  }
+
+  .showcase-subsect-title {
+    font-size: 2.25rem;
+  }
+
+  .showcase-subsect-desc {
+    font-size: 0.8rem;
+    width: 90%;
+  }
+
+  .subsect-category {
+    font-size: 3rem;
+    bottom: 3rem;
+    right: 7.5rem;
+  }
+
+  .subsect-category2 {
+    font-size: 3rem;
+    bottom: 3rem;
+    left: 2rem;
+  }
+
+  .showcase-btn {
+    font-size: 0.85rem;
+  }
 }
