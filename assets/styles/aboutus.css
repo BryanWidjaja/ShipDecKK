@@ -3,6 +3,7 @@
   font-family: "Laurentian Std", serif;
   font-style: italic;
   font-size: 3rem;
+  color: var(--main-primary);
 }
 
 .aboutus-text {

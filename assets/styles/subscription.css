@@ -188,3 +188,10 @@
     width: 0.85rem;
   }
 }
+
+@media (max-width: 450px) {
+  .form-element-row-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

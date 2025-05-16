@@ -6,13 +6,13 @@
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
-  min-height: 100vh;
 }
 
 .gallery-title {
   font-family: "Laurentian Std", serif;
   font-style: italic;
   font-size: 3rem;
+  color: var(--main-primary);
 }
 
 .catagories {
@@ -205,5 +205,20 @@
 
   .ship-card {
     width: 30%;
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .ship-card {
+    width: 75%;
+  }
+
+  .catagories {
+    gap: 2.5rem;
   }
 }

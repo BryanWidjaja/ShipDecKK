@@ -76,8 +76,8 @@ a:hover {
   width: 100%;
   background: linear-gradient(
     135deg,
-    rgba(144, 120, 86, 0.5),
-    rgba(84, 125, 156, 0.25)
+    rgba(144, 120, 86, 0.6),
+    rgba(84, 125, 156, 0.3)
   );
   z-index: 1;
 }

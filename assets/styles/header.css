@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   color: var(--main-offwhite);
   gap: 0.5rem;
+  text-align: center;
 }
 
 .header p {
@@ -67,5 +68,29 @@
 
   .header-desc {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 50vh;
+  }
+
+  .header-title {
+    font-size: 3rem;
+  }
+
+  .header-desc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    height: 40vh;
+  }
+
+  .header-desc {
+    width: 80%;
   }
 }

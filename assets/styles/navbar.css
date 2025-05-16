@@ -29,6 +29,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 5%;
+  z-index: 20;
 }
 
 .nav-links {
@@ -64,8 +65,8 @@
     flex-direction: column;
     justify-content: flex-start;
     display: none;
-    padding: 1rem 0;
-    gap: 2%;
+    padding: 1rem;
+    gap: 4%;
   }
 
   .links.visible {
@@ -78,5 +79,15 @@
 
   .navbar.visible {
     background: linear-gradient(135deg, rgba(41, 55, 59), rgba(24, 39, 48));
+  }
+}
+
+@media (max-width: 450px) {
+  .links {
+    width: 40%;
+  }
+
+  .links a {
+    font-size: 1.25rem;
   }
 }
