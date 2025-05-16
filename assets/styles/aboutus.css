@@ -1,5 +1,4 @@
-.aboutus-title,
-.journey-year {
+.aboutus-title {
   font-family: "Laurentian Std", serif;
   font-style: italic;
   font-size: 3rem;
@@ -17,52 +16,133 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-  color: var(--main-darkblue);
-}
-
-.ourjourney {
-  height: 65vh;
-  background-color: var(--main-ivory);
-  color: var(--main-darkblue);
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0;
-  justify-content: center;
-  align-items: center;
-  overflow-x: auto;
-}
-
-.journey-container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-  text-align: center;
-}
-
-.journey-card {
-  width: 15%;
-  height: 80%;
-  background-color: var(--main-beige);
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
-  align-items: center;
   gap: 1rem;
-  justify-content: flex-start;
+  text-align: center;
+  color: var(--main-darkblue);
 }
 
-.horizontal-line {
-  width: 90%;
-  height: 0.01rem;
-  background-color: #999999;
+.ourmission {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  color: var(--main-darkblue);
+  background-color: var(--main-ivory);
 }
 
-.journey-text {
-  font-size: 1.1rem;
+.ourvalues {
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  color: var(--main-darkblue);
+}
+
+.values-container {
+  height: 50vh;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.values-card {
+  width: 22.5%;
+  height: 100%;
+  background-color: var(--main-offwhite);
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  text-align: center;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.values-img {
+  height: 55%;
+  object-fit: cover;
+}
+
+.padded {
+  padding: 0.75rem;
+}
+
+.values-title {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.values-desc {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .aboutus-title {
+    font-size: 2.25rem;
+  }
+
+  .aboutus-text {
+    font-size: 1rem;
+  }
+
+  .values-title {
+    font-size: 1.05rem;
+  }
+
+  .values-desc {
+    font-size: 0.85rem;
+  }
+
+  .ourstory {
+    height: 55vh;
+  }
+
+  .ourmission {
+    height: 30vh;
+  }
+
+  .values-container {
+    height: auto;
+    flex-direction: column;
+  }
+  .values-card {
+    width: 70%;
+    height: 22.5vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutus-text {
+    font-size: 0.85rem;
+    width: 85%;
+  }
+
+  .ourstory {
+    height: 60vh;
+  }
+
+  .values-title {
+    font-size: 0.85rem;
+  }
+
+  .values-desc {
+    font-size: 0.725rem;
+  }
+
+  .values-card {
+    width: 65%;
+    gap: 0.25rem;
+  }
+
+  .values-img {
+    height: 50%;
+  }
 }
