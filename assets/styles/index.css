@@ -245,51 +245,6 @@ video {
   -webkit-text-stroke: 0.05rem var(--main-offwhite);
 }
 
-.subscribe {
-  padding: 10vh 0;
-  height: 50vh;
-  background: linear-gradient(
-    135deg,
-    var(--main-primary),
-    var(--main-darkblue)
-  );
-  padding: 2rem 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--main-offwhite);
-}
-
-.subscribe-title {
-  font-family: "Laurentian Std", serif;
-  font-style: italic;
-  font-size: 3.5rem;
-}
-
-.subscribe-desc {
-  font-size: 1.25rem;
-  padding-bottom: 2rem;
-}
-
-.subscribe-btn {
-  background-color: var(--main-offwhite);
-  border: 0.2rem solid var(--main-offwhite);
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: var(--main-primary);
-  transition: all 0.3s;
-}
-
-.subscribe-btn:hover {
-  cursor: pointer;
-  background-color: transparent;
-  border: 0.2rem solid var(--main-offwhite);
-  color: var(--main-offwhite);
-}
-
 @media (max-width: 768px) {
   .logo-div a,
   .main-title {

@@ -1,0 +1,83 @@
+.subscribe {
+  height: 70vh;
+  background-image: url("../images/ocean_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7rem 3rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-offwhite);
+  text-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.subscribe-title {
+  font-family: "Laurentian Std", serif;
+  font-style: italic;
+  font-size: 3.5rem;
+}
+
+.subscribe-desc {
+  font-size: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.subscribe-btn {
+  background-color: var(--main-offwhite);
+  border: 0.2rem solid var(--main-offwhite);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--main-primary);
+  transition: all 0.3s;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0.2rem solid var(--main-offwhite);
+  color: var(--main-offwhite);
+}
+
+@media (max-width: 768px) {
+  .subscribe {
+    height: 35vh;
+  }
+
+  .subscribe-title {
+    font-size: 2.75rem;
+  }
+
+  .subscribe-desc {
+    padding-bottom: 1.5rem;
+  }
+
+  .subscribe-desc,
+  .subscribe-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .subscribe {
+    height: 30vh;
+  }
+  .subscribe-title {
+    font-size: 2rem;
+  }
+
+  .subscribe-desc {
+    font-size: 0.85rem;
+    padding-bottom: 1rem;
+  }
+
+  .subscribe-btn {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
