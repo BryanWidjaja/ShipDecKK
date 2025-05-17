@@ -1,5 +1,5 @@
 .gallery {
-  padding: 10vh 0;
+  padding: 15vh 0;
   color: var(--main-darkblue);
   display: flex;
   flex-direction: column;
@@ -295,7 +295,8 @@
   }
 
   .popup-img {
-    width: 65%;
+    width: auto;
+    height: 35%;
   }
 
   .ship-card-img {

@@ -1,3 +1,7 @@
+/* body {
+  overflow-x: hidden;
+} */
+
 .landing {
   height: 100vh;
   position: relative;
@@ -99,11 +103,10 @@ video {
   border: 0.15rem solid var(--main-offwhite);
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
-  transition: all 0.3s;
   font-weight: 600;
   font-size: 1.25rem;
   color: var(--main-offwhite);
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .main-btn:hover {
@@ -145,9 +148,7 @@ video {
   color: var(--main-primary);
 }
 
-.showcase-subsect1,
-.showcase-subsect2,
-.showcase-subsect3 {
+.showcase-subsect {
   height: 50vh;
   width: 60%;
   background-size: cover;
@@ -159,11 +160,23 @@ video {
   border-radius: 2rem;
   position: relative;
   box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  transition-delay: 50ms;
 }
 
-.showcase-subsect1 p,
-.showcase-subsect2 p,
-.showcase-subsect3 p {
+.hidden-down {
+  opacity: 0;
+  filter: blur(0.1rem);
+  transform: translateY(50%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.showcase-subsect p {
   color: var(--main-offwhite);
   z-index: 5;
 }
@@ -179,26 +192,24 @@ video {
   width: 70%;
 }
 
-.showcase-subsect1 {
+.subsect1 {
   background-image: url("../images/yacht/1.png");
   margin-right: 10%;
 }
 
-.showcase-subsect2 {
+.subsect2 {
   background-image: url("../images/liner/1.png");
   text-align: right;
   align-items: flex-end;
   margin-left: 10%;
 }
 
-.showcase-subsect3 {
+.subsect3 {
   background-image: url("../images/cargo/1.png");
   margin-right: 10%;
 }
 
-.showcase-subsect1 a,
-.showcase-subsect2 a,
-.showcase-subsect3 a {
+.showcase-subsect a {
   z-index: 5;
   padding-top: 1rem;
 }
@@ -211,7 +222,7 @@ video {
   font-weight: 600;
   font-size: 1.15rem;
   color: var(--main-offwhite);
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .showcase-btn:hover {
@@ -299,9 +310,7 @@ video {
     font-size: 2.25rem;
   }
 
-  .showcase-subsect1,
-  .showcase-subsect2,
-  .showcase-subsect3 {
+  .showcase-subsect {
     padding: 1.5rem 2rem;
     width: 70%;
     height: 25vh;
@@ -351,9 +360,7 @@ video {
     font-size: 1.75rem;
   }
 
-  .showcase-subsect1,
-  .showcase-subsect2,
-  .showcase-subsect3 {
+  .showcase-subsect {
     padding: 1rem 1.5rem;
     width: 75%;
     height: 25vh;
