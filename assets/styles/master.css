@@ -1,4 +1,4 @@
-@import url("https://db.onlinewebfonts.com/a/UyrHp0bq3yfz11N7puodw0uQcq6vQ3a2z6lr20yq");
+/* @import url("https://db.onlinewebfonts.com/a/UyrHp0bq3yfz11N7puodw0uQcq6vQ3a2z6lr20yq"); */
 
 @font-face {
   font-family: "Poppins";
@@ -40,8 +40,8 @@
   --main-darkblue: #05263d;
   --main-darkgrayblue: #44484a;
   --main-offwhite: #fffffd;
-  --main-beige: rgb(249, 248, 245);
-  --main-ivory: rgb(240, 238, 234);
+  --main-beige: #f9f8f5;
+  --main-ivory: #f0eeea;
 }
 
 body {
