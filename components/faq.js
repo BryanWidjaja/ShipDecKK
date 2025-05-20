@@ -1,14 +1,16 @@
-const questionContainers = document.querySelectorAll(".faq-question-container");
+const plusBtn = document.querySelectorAll(".faq-plusBtn");
 
 const plusIcon = "./assets/icons/plus.svg";
 const minusIcon = "./assets/icons/minus.svg";
 
-questionContainers.forEach((question) => {
-  question.addEventListener("click", () => {
-    const answer = question.nextElementSibling;
-    const faqBtn = question.querySelector("img");
+plusBtn.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    const questionContainer = btn.closest(".faq-question-container");
+    const answer = questionContainer.nextElementSibling;
 
     const isAnswerVisible = answer.classList.toggle("visible");
-    faqBtn.src = isAnswerVisible ? minusIcon : plusIcon;
+    btn.src = isAnswerVisible ? minusIcon : plusIcon;
   });
 });
