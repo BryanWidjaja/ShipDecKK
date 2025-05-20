@@ -137,7 +137,7 @@ video {
   gap: 2rem;
 }
 
-.showcase-title {
+.section-title {
   color: var(--main-darkblue);
   font-family: "Laurentian Std", serif;
   font-style: italic;
@@ -254,6 +254,176 @@ video {
   -webkit-text-stroke: 0.05rem var(--main-offwhite);
 }
 
+.whychoose {
+  width: 100%;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--main-ivory);
+}
+
+.whychoose-container {
+  width: 65%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  color: var(--main-darkblue);
+}
+
+.whychoose-main-img {
+  width: 40%;
+  height: 100%;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  object-fit: cover;
+  object-position: center 70%;
+}
+
+.whychoose-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.whychoose-card {
+  display: flex;
+  height: 30%;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--main-offwhite);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  gap: 1rem;
+  align-items: center;
+}
+
+.whychoose-card:nth-child(2) {
+  transition-delay: 150ms;
+}
+
+.whychoose-card:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+.hidden-left {
+  opacity: 0;
+  filter: blur(0.1rem);
+  transform: translateX(-25%);
+}
+
+.hidden-right {
+  opacity: 0;
+  filter: blur(0.1rem);
+  transform: translateX(25%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.whychoose-card-img {
+  height: 80%;
+}
+
+.whychoose-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.whychoose-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.whychoose-desc {
+  font-size: 1rem;
+}
+
+.faq {
+  width: 100%;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.faq-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--main-darkblue);
+}
+
+.faq-question-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--main-offwhite);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.faq-question-container:nth-child(3) {
+  transition-delay: 150ms;
+}
+
+.faq-question-container:nth-child(5) {
+  transition-delay: 300ms;
+}
+
+.faq-question-container:nth-child(7) {
+  transition-delay: 450ms;
+}
+
+.faq-question-container:nth-child(9) {
+  transition-delay: 600ms;
+}
+
+.faq-question-container:nth-child(11) {
+  transition-delay: 750ms;
+}
+
+.faq-question-container img {
+  height: 1.5rem;
+}
+
+.faq-question-container img:hover {
+  cursor: pointer;
+}
+
+.faq-answer-container {
+  display: none;
+  width: 45%;
+  gap: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.faq-answer-container.visible {
+  display: flex;
+}
+
+.vertical-line {
+  min-width: 0.15rem;
+  height: auto;
+  background-color: var(--main-primary);
+}
+
 @media (max-width: 768px) {
   .logo-div a,
   .main-title {
@@ -303,7 +473,7 @@ video {
     gap: 1.25rem;
   }
 
-  .showcase-title,
+  .section-title,
   .showcase-subsect-title {
     font-size: 2.25rem;
   }
@@ -331,8 +501,42 @@ video {
     left: 2rem;
   }
 
-  .showcase-btn {
+  .showcase-btn,
+  .faq-question-container,
+  .faq-answer-container,
+  .whychoose-desc {
     font-size: 0.85rem;
+  }
+
+  .faq-question-container {
+    width: 80%;
+    padding: 0.75rem 1.15rem;
+  }
+
+  .faq-answer-container {
+    width: 75%;
+  }
+
+  .whychoose-container {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .whychoose-main-img {
+    height: 35%;
+    width: 100%;
+  }
+
+  .whychoose-card-container {
+    height: 60%;
+  }
+
+  .whychoose-card {
+    height: 30%;
+  }
+
+  .whychoose-title {
+    font-size: 0.95rem;
   }
 }
 
@@ -353,7 +557,7 @@ video {
     gap: 1rem;
   }
 
-  .showcase-title,
+  .section-title,
   .showcase-subsect-title {
     font-size: 1.75rem;
   }
@@ -381,7 +585,22 @@ video {
     left: 1.5rem;
   }
 
-  .showcase-btn {
+  .showcase-btn,
+  .faq-question-container,
+  .faq-answer-container,
+  .whychoose-desc {
     font-size: 0.65rem;
+  }
+
+  .faq-question-container {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .whychoose-title {
+    font-size: 0.8rem;
+  }
+
+  .whychoose-card-img {
+    height: 70%;
   }
 }
