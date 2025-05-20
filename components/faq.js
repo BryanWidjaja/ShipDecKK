@@ -1,7 +1,7 @@
 const questionContainers = document.querySelectorAll(".faq-question-container");
 
-const plusIcon = "../assets/icons/plus.svg";
-const minusIcon = "../assets/icons/minus.svg";
+const plusIcon = "./assets/icons/plus.svg";
+const minusIcon = "./assets/icons/minus.svg";
 
 questionContainers.forEach((question) => {
   question.addEventListener("click", () => {
