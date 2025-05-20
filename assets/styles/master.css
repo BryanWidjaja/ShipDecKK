@@ -48,6 +48,7 @@ body {
   font-family: "Poppins", serif;
   transition: all 0.5s;
   background-color: var(--main-beige);
+  overflow-x: hidden;
 }
 
 html {
@@ -104,4 +105,8 @@ a:hover {
 
 .hamburger:hover {
   cursor: pointer;
+}
+
+.bg-dark-gray {
+  background: linear-gradient(135deg, rgba(41, 55, 59), rgba(24, 39, 48));
 }

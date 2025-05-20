@@ -27,7 +27,6 @@ const hamburgerIcon = "./assets/icons/hamburger.svg";
 const closeIcon = "./assets/icons/white_close.svg";
 
 hamburgerBtn.addEventListener("click", () => {
-  console.log("test");
   const isMenuVisible = linksContainer.classList.toggle("visible");
   navBar.classList.toggle("visible");
 

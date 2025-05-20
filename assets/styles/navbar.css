@@ -10,7 +10,6 @@
   padding: 0 5rem;
   z-index: 15;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, rgba(41, 55, 59), rgba(24, 39, 48));
 }
 
 .logo-div {
@@ -82,7 +81,11 @@
   }
 
   .navbar.visible {
-    background: linear-gradient(135deg, rgba(41, 55, 59), rgba(24, 39, 48));
+    background: linear-gradient(
+      135deg,
+      rgba(41, 55, 59),
+      rgba(24, 39, 48)
+    ) !important;
   }
 }
 
