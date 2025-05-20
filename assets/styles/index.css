@@ -380,23 +380,23 @@ video {
 }
 
 .faq-question-container:nth-child(3) {
-  transition-delay: 150ms;
+  transition-delay: 100ms;
 }
 
 .faq-question-container:nth-child(5) {
-  transition-delay: 300ms;
+  transition-delay: 200ms;
 }
 
 .faq-question-container:nth-child(7) {
-  transition-delay: 450ms;
+  transition-delay: 300ms;
 }
 
 .faq-question-container:nth-child(9) {
-  transition-delay: 600ms;
+  transition-delay: 400ms;
 }
 
 .faq-question-container:nth-child(11) {
-  transition-delay: 750ms;
+  transition-delay: 500ms;
 }
 
 .faq-question-container img {
