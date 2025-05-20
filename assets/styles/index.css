@@ -382,10 +382,6 @@ video {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    width: 91% !important;
-  }
-
   .main-title {
     font-size: 3rem;
   }
@@ -471,14 +467,6 @@ video {
 }
 
 @media (max-width: 450px) {
-  .links {
-    width: 40%;
-  }
-
-  .links a {
-    font-size: 1.25rem;
-  }
-
   .main-desc {
     font-size: 1rem;
   }
