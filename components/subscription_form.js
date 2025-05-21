@@ -44,7 +44,7 @@ subscriptionForm.addEventListener("submit", function (e) {
     displayErrorMsg(ageError, "Please enter a number!");
     valid = false;
   } else if (age < 18) {
-    displayErrorMsg(ageError, "Age must be above 18!");
+    displayErrorMsg(ageError, "Age must be atleast 18!");
     valid = false;
   } else if (age > 99) {
     displayErrorMsg(ageError, "Age must be below 99!");
@@ -73,9 +73,8 @@ subscriptionForm.addEventListener("submit", function (e) {
   }
 
   if (valid) {
-    console.log("Form submitted successfully");
     resetAllErrorMsg();
-    alert("test");
+    alert("Form Successfuly Submitted!");
   }
 });
 
