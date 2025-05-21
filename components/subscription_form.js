@@ -120,7 +120,6 @@ showPassBtn.addEventListener("click", function () {
 });
 
 const validPassword = (passwordInput) => {
-  console.log("Validating password:", passwordInput);
   if (passwordInput.length < 8) {
     displayErrorMsg(
       passwordError,
